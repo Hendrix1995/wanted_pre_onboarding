@@ -10,7 +10,7 @@ section {
         padding: 5rem;
     }
 
-    .toggle-bg {
+    .toggle-box {
         display: flex;
         align-items: center;
         width: 5rem;
@@ -43,25 +43,24 @@ section {
 
     .toggle-circle {
         z-index: 10;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 26px;
+        height: 26px;
         background-color: #ffffff;
         border-radius: 15px;
         position: absolute;
-        right: 50.5%;
         transition: all 0.5s ease-in-out;
+        margin-left: 5px;
     }
 
     .toggle-circle-on {
         z-index: 10;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 26px;
+        height: 26px;
         background-color: #ffffff;
         border-radius: 50%;
         position: absolute;
-        right: 50.5%;
         cursor: pointer;
-        transform: translateX(43px);
+        transform: translateX(3rem);
         transition: all 0.5s ease-in-out;
     }
 }
