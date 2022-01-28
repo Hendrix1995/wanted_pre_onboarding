@@ -1,12 +1,15 @@
 @import "./component/Toggle";
 @import "./component/Modal";
+@import "./component/Tab";
 
 body {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 section {
-    margin: 30px;
+    margin: 2rem;
     border: 1px solid gray;
     border-radius: 15px;
     height: 35vh;

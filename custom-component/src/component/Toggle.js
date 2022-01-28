@@ -15,7 +15,7 @@ function Toggle() {
                     <div className={isToggleOn ? "toggle-bg-on" : "toggle-bg-off"} />
                     <div className={isToggleOn ? "toggle-circle-on" : "toggle-circle"} />
                 </div>
-                <div className="toggle-text">Toggle Switch {isToggleOn ? "ON" : "OFF"}</div>
+                <div className="description">Toggle Switch {isToggleOn ? "ON" : "OFF"}</div>
             </div>
         </section>
     );
