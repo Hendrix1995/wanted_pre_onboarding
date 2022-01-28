@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,IAAI;CACtB;;ADFD,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;CACZ",
+    "sources": [
+        "index.scss",
+        "component/_Toggle.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
