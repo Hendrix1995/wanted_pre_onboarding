@@ -20,7 +20,7 @@ function Tab() {
             <div className="tab-container">
                 <div className="tab-box">
                     {tabArr.map((tabs, index) => (
-                        <div className={isSelected === index ? "tab-content-selected" : "tab-content"} onClick={() => tabSelectHandler(index)}>
+                        <div key={index} className={isSelected === index ? "tab-content-selected" : "tab-content"} onClick={() => tabSelectHandler(index)}>
                             {tabs}
                         </div>
                     ))}

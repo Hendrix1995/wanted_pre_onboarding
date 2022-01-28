@@ -1,6 +1,7 @@
 @import "./component/Toggle";
 @import "./component/Modal";
 @import "./component/Tab";
+@import "./component/Tag";
 
 body {
     box-sizing: border-box;
@@ -12,7 +13,7 @@ section {
     margin: 2rem;
     border: 1px solid gray;
     border-radius: 15px;
-    height: 35vh;
+    min-height: 35vh;
 }
 
 h2 {

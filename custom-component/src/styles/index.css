@@ -196,6 +196,92 @@ h4 {
   transition: all 0.5s ease-in-out;
 }
 
+.tag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto 0 auto;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tag-container-forced {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto 0 auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  background-color: #4000c7;
+  color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.fa-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #4000c7;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+.tag-input {
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.tag-input:focus {
+  outline: none;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -207,7 +293,7 @@ section {
   margin: 2rem;
   border: 1px solid gray;
   border-radius: 15px;
-  height: 35vh;
+  min-height: 35vh;
 }
 
 h2 {
