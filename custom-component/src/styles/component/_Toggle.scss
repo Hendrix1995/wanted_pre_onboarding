@@ -19,38 +19,47 @@ section {
         background-color: #c5c5c5;
         margin-bottom: 2rem;
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
     }
 
     .toggle-bg-on {
-        display: flex;
-        align-items: center;
-        width: 5rem;
-        height: 2.2rem;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
         border-radius: 15px;
         background-color: #4000c7;
-        margin-bottom: 2rem;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
     }
 
+    .toggle-bg-off {
+        z-index: 1;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+    }
+
     .toggle-circle {
+        z-index: 10;
         width: 1.6rem;
         height: 1.6rem;
         background-color: #ffffff;
         border-radius: 15px;
-        position: relative;
-        left: 5px;
+        position: absolute;
+        right: 50.5%;
         transition: all 0.5s ease-in-out;
     }
 
     .toggle-circle-on {
+        z-index: 10;
         width: 1.6rem;
         height: 1.6rem;
         background-color: #ffffff;
-        border-radius: 15px;
-        position: relative;
-        left: 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: 50.5%;
         cursor: pointer;
         transform: translateX(43px);
         transition: all 0.5s ease-in-out;
