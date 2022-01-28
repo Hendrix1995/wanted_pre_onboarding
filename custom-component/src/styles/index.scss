@@ -1,5 +1,17 @@
 @import "./component/Toggle";
+@import "./component/Modal";
 
 body {
     margin: 0;
+}
+
+section {
+    margin: 30px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 35vh;
+}
+
+h2 {
+    margin-left: 15px;
 }

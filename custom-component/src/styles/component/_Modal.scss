@@ -1,0 +1,49 @@
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    padding: 1.5rem;
+    background-color: #4000c7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.modal-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem 10rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    cursor: default;
+}
+
+.fa-times {
+    cursor: pointer;
+}
+
+h4 {
+    color: #4000c7;
+}

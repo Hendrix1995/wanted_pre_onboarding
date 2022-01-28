@@ -1,70 +1,60 @@
-section {
-    margin: 30px;
-    border: 1px solid gray;
-    border-radius: 15px;
-
-    .toggle-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5rem;
-    }
-
-    .toggle-box {
-        display: flex;
-        align-items: center;
-        width: 5rem;
-        height: 2.2rem;
-        border-radius: 15px;
-        background-color: #c5c5c5;
-        margin-bottom: 2rem;
-        cursor: pointer;
-    }
-
-    .toggle-bg-on {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        background-color: #4000c7;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .toggle-bg-off {
-        z-index: 1;
-        width: 0;
-        height: 100%;
-        opacity: 0;
-        border-radius: 50%;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .toggle-circle {
-        z-index: 10;
-        width: 26px;
-        height: 26px;
-        background-color: #ffffff;
-        border-radius: 15px;
-        position: absolute;
-        transition: all 0.5s ease-in-out;
-        margin-left: 5px;
-    }
-
-    .toggle-circle-on {
-        z-index: 10;
-        width: 26px;
-        height: 26px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        position: absolute;
-        cursor: pointer;
-        transform: translateX(3rem);
-        transition: all 0.5s ease-in-out;
-    }
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
 }
 
-h2 {
-    margin-left: 15px;
+.toggle-box {
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: 15px;
+    background-color: #c5c5c5;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.toggle-bg-on {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #4000c7;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-bg-off {
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-circle {
+    z-index: 10;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    margin-left: 5px;
+}
+
+.toggle-circle-on {
+    z-index: 10;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transform: translateX(3rem);
+    transition: all 0.5s ease-in-out;
 }
