@@ -4,6 +4,83 @@ section {
   border-radius: 15px;
 }
 
+section .toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+}
+
+section .toggle-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 2.2rem;
+  border-radius: 15px;
+  background-color: #c5c5c5;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section .toggle-bg-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 2.2rem;
+  border-radius: 15px;
+  background-color: #4000c7;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section .toggle-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  left: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section .toggle-circle-on {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+  -webkit-transform: translateX(43px);
+          transform: translateX(43px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+h2 {
+  margin-left: 15px;
+}
+
 body {
   margin: 0;
 }

@@ -2,4 +2,61 @@ section {
     margin: 30px;
     border: 1px solid gray;
     border-radius: 15px;
+
+    .toggle-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    .toggle-bg {
+        display: flex;
+        align-items: center;
+        width: 5rem;
+        height: 2.2rem;
+        border-radius: 15px;
+        background-color: #c5c5c5;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .toggle-bg-on {
+        display: flex;
+        align-items: center;
+        width: 5rem;
+        height: 2.2rem;
+        border-radius: 15px;
+        background-color: #4000c7;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .toggle-circle {
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: #ffffff;
+        border-radius: 15px;
+        position: relative;
+        left: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .toggle-circle-on {
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: #ffffff;
+        border-radius: 15px;
+        position: relative;
+        left: 5px;
+        cursor: pointer;
+        transform: translateX(43px);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+h2 {
+    margin-left: 15px;
 }
