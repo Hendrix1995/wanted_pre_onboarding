@@ -282,9 +282,47 @@ h4 {
   outline: none;
 }
 
-body {
+.autocomplete-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.autocomplete-container .fa-times {
+  position: absolute;
+  color: black;
+  margin-right: 5px;
+}
+
+.autocomplete-input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d7d7d7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.autocomplete-input:focus {
+  outline: none;
+  -webkit-box-shadow: #acacac 3px 3px 3px;
+          box-shadow: #acacac 3px 3px 3px;
+}
+
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }

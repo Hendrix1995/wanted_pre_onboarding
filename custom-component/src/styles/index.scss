@@ -2,9 +2,13 @@
 @import "./component/Modal";
 @import "./component/Tab";
 @import "./component/Tag";
+@import "./component/AutoComplete";
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
