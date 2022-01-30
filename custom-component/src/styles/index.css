@@ -283,38 +283,50 @@ h4 {
 }
 
 .autocomplete-container {
+  border: 1px solid #dfdfdf;
+  border-radius: 15px;
+}
+
+.autocomplete-input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.autocomplete-container .fa-times {
-  position: absolute;
+.autocomplete-input-container .fa-times {
   color: black;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .autocomplete-input {
   width: 100%;
-  height: 3rem;
-  padding: 1rem;
+  border: none;
   font-size: 1rem;
-  border-radius: 12px;
-  border: 1px solid #d7d7d7;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  padding: 1rem;
 }
 
 .autocomplete-input:focus {
   outline: none;
-  -webkit-box-shadow: #acacac 3px 3px 3px;
-          box-shadow: #acacac 3px 3px 3px;
+}
+
+.dropDownList-box {
+  border-top: 1px solid #dfdfdf;
+  list-style: none;
+}
+
+.dropDownList {
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.dropDownList:hover {
+  background-color: #d3d3d3;
 }
 
 * {
