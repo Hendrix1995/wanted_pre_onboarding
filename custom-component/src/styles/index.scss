@@ -3,6 +3,7 @@
 @import "./component/Tab";
 @import "./component/Tag";
 @import "./component/AutoComplete";
+@import "./component/ClickToEdit";
 
 * {
     box-sizing: border-box;
@@ -14,10 +15,11 @@ body {
 }
 
 section {
-    margin: 2rem;
+    margin: 6rem 2rem;
     border: 1px solid gray;
     border-radius: 15px;
     min-height: 35vh;
+    box-shadow: gray 1px 1px 4px;
 }
 
 h2 {
