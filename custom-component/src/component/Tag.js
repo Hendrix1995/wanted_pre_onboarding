@@ -6,7 +6,6 @@ function Tag() {
 
     const addTag = (e) => {
         const filtered = tags.filter((el) => el === e.target.value);
-        console.log(filtered);
         if (e.target.value !== "" && filtered.length === 0) {
             setTags([...tags, e.target.value]);
         }

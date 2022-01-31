@@ -1,6 +1,10 @@
 .autocomplete-container {
+    display: block;
+    margin: 0 auto;
+    width: 99.6%;
     border: 1px solid #dfdfdf;
     border-radius: 15px;
+    box-shadow: gray 4px 4px 4px;
 }
 
 .autocomplete-input-container {

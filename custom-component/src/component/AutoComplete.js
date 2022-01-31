@@ -4,17 +4,21 @@ function AutoComplete() {
     const [inputValue, setInputValue] = useState("");
     const [isEmpty, setIsEmpty] = useState(false);
     const [options, setOptions] = useState(["antique", "vintage", "중고A급", "rustic", "refurbished"]);
+    const [suggestions, setSuggestions] = useState([]);
 
     const inputValueHandler = (text) => {
+        let matches = [];
         if (text) {
             setIsEmpty(true);
+            matches = options.filter((el) => {
+                const regex = new RegExp(`${text}`, "gi");
+                return el.match(regex);
+            });
         } else {
             setIsEmpty(false);
         }
+        setSuggestions(matches);
         setInputValue(text);
-
-        const Regex = new RegExp(text, "i");
-        const selectedOption = options.filter((el) => el.match(Regex));
     };
 
     const dropDownClickHandler = (option) => {
@@ -25,6 +29,7 @@ function AutoComplete() {
 
     const deleteInputHandler = () => {
         setInputValue("");
+        setSuggestions([]);
     };
 
     useEffect(() => {
@@ -38,13 +43,13 @@ function AutoComplete() {
             <h2>Autocomplete</h2>
             <div className="autocomplete-container">
                 <div className="autocomplete-input-container">
-                    <input type="text" className="autocomplete-input" autoComplete="on" onChange={(e) => inputValueHandler(e.target.value)} value={inputValue} />
+                    <input type="text" className="autocomplete-input" onChange={(e) => inputValueHandler(e.target.value)} value={inputValue} />
                     <i className="fas fa-times" onClick={deleteInputHandler} />
                 </div>
                 {isEmpty ? (
-                    <div className="dropDownList-box">
-                        {options.map((el, index) => (
-                            <li className="dropDownList" key={index} onClick={dropDownClickHandler}>
+                    <div className={suggestions.length === 0 ? "" : "dropDownList-box"}>
+                        {suggestions.map((el, index) => (
+                            <li className="dropDownList" key={index} onClick={() => dropDownClickHandler(el)}>
                                 {el}
                             </li>
                         ))}
