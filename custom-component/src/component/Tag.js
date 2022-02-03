@@ -16,7 +16,7 @@ function Tag() {
         setTags(tags.filter((e, index) => index !== tagIndex));
     };
 
-    const forceHandler = () => {
+    const forcedHandler = () => {
         setIsForced(!isForced);
     };
 
@@ -32,7 +32,7 @@ function Tag() {
                         </li>
                     ))}
                 </ul>
-                <input className="tag-input" onFocus={forceHandler} onBlur={forceHandler} onKeyUp={(e) => (e.key === "Enter" ? addTag(e) : null)} placeholder="Press enter to add tags" />
+                <input className="tag-input" onFocus={forcedHandler} onBlur={forcedHandler} onKeyUp={(e) => (e.key === "Enter" ? addTag(e) : null)} placeholder="Press enter to add tags" />
             </div>
         </section>
     );
